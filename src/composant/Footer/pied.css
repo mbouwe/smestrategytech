@@ -1,0 +1,62 @@
+.footer {
+  background-color: #23b0dc; /* Couleur de fond */
+  color: white; /* Couleur du texte */
+  padding: 40px 20px; /* Espacement */
+  text-align: center; /* Centre le texte */
+}
+
+.footer-container {
+  display: flex; /* Utilise flexbox pour aligner les colonnes */
+  justify-content: space-between; /* Espacement égal entre les colonnes */
+  max-width: 1200px; /* Largeur maximum */
+  margin: 0 auto; /* Centre le container */
+}
+
+.footer h3 {
+  margin-bottom: 15px; /* Espace sous les titres */
+  font-size: 1.2em; /* Taille du texte */
+  text-transform: uppercase; /* Met les titres en majuscules */
+}
+
+.footer ul {
+  list-style: none; /* Enlève les puces */
+  padding: 0; /* Enlève le padding */
+}
+
+.footer ul li {
+  margin: 8px 0; /* Espacement entre les items */
+}
+
+.footer ul li a {
+  color: white; /* Couleur des liens */
+  text-decoration: none; /* Enlève le soulignement */
+  transition: color 0.3s; /* Animation de couleur */
+}
+
+.footer ul li a:hover {
+  color: #ffeb3b; /* Changement de couleur au survol */
+}
+
+.footer-socials {
+  margin-top: 20px; /* Espace au-dessus des réseaux sociaux */
+}
+
+.social-icons {
+  display: flex; /* Aligne les icônes horizontalement */
+  justify-content: center; /* Centre les icônes */
+  gap: 20px; /* Espace entre les icônes */
+}
+
+.social-icons a {
+  color: white; /* Couleur des icônes */
+  transition: transform 0.3s; /* Animation pour le changement de taille */
+}
+
+.social-icons a:hover {
+  transform: scale(1.2); /* Agrandit l'icône au survol */
+}
+
+.footer-bottom {
+  margin-top: 30px; /* Espace au-dessus du bas du footer */
+  font-size: 0.9em; /* Taille du texte pour le copyright */
+}

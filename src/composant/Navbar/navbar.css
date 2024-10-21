@@ -1,0 +1,144 @@
+/* src/sec/composant/Navbar.css */
+
+
+  
+  .n-wrapper {
+    height: 8vh;
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 10px 10px 6px rgba(22, 41, 213, 0.468);
+    padding: 5px;
+    width: 95%;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 9999;
+  }
+  
+  .n-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .n-left img {
+    height: 4rem;
+    width: auto;
+  }
+  
+  .n-name {
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+  }
+  
+  .n-name1, .n-name2 {
+    font-size: 17px;
+    font-weight: bold;
+  }
+  
+  .n-name1 {
+    color: var(--gris);
+  }
+  
+  .n-name2 {
+    color: var(--bleu);
+  }
+  
+  .n-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  
+  .n-list {
+    flex: 10;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .n-list > ul {
+    display: flex;
+    gap: 2rem;
+    margin-right: 4rem;
+    list-style: none;
+  }
+  
+  .n-list ul li {
+    position: relative;
+    font-weight: 500;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    white-space: nowrap; /* Empêche les mots de se briser sur plusieurs lignes */
+  }
+  
+  .n-list ul li a {
+    text-decoration: none;  /* Retirer le soulignement par défaut */
+    color: black;           /* Texte noir par défaut */
+    white-space: nowrap;    /* Empêche les mots de se briser sur plusieurs lignes */
+  }
+  
+  .n-list ul li a:hover {
+    color: var(--bleu);     /* Change la couleur au survol */
+    text-decoration: none;  /* Pas de soulignement au survol */
+  }
+  
+  .n-list > ul > li:hover {
+    cursor: pointer;
+    color: var(--bleu);
+    border-bottom: 3px solid var(--bleu);
+  }
+  
+  .n-list > ul > li::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--bleu);
+    transition: width 0.3s ease;
+  }
+  
+  .n-list > ul > li:hover::after {
+    width: 100%;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    background-color: var(--bleu);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsivité */
+  @media (max-width: 768px) {
+    .n-wrapper {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .n-left, .n-right {
+      justify-content: center;
+    }
+  
+    .n-list ul {
+      flex-direction: column;
+      gap: 1rem;
+      margin-right: 0;
+    }
+  }
+  

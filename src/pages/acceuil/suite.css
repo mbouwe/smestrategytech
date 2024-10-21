@@ -1,0 +1,110 @@
+/* Suite.css */
+
+body {
+    font-family: 'Arial', sans-serif; /* Une police simple et moderne */
+}
+
+.suite-container {
+    display: flex; /* Utilisation de Flexbox */
+    justify-content: space-between; /* Espacement entre les colonnes */
+    padding: 2rem;
+    background-color: #f4f4f4; /* Couleur de fond plus douce */
+}
+
+.welcome-text {
+    flex: 0 0 35%; /* Prend 35% de l'espace */
+    padding: 2rem; /* Ajout de padding */
+    text-align: left; /* Alignement à gauche */
+    background-color: #ffffff; /* Fond blanc pour le texte */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+.welcome-text h2 {
+    font-size: 2rem; /* Augmentation de la taille du titre */
+    color: #23b0dc; /* Couleur du titre */
+    margin-bottom: 1rem; /* Espacement au-dessous */
+}
+
+.welcome-text p {
+    font-size: 1rem; /* Taille du texte */
+    color: #333; /* Couleur du texte plus sombre */
+    line-height: 1.5; /* Espacement des lignes */
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Espacement entre les cartes */
+    flex: 0 0 60%; /* Prend 60% de l'espace */
+    margin-top: 2rem; /* Marge pour séparer des textes */
+}
+
+.service-card {
+    background: white;
+    border-radius: 12px; /* Coins arrondis */
+    border: 2px solid #23b0dc; /* Bordure bleue */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    padding: 0.75rem; /* Diminution du padding pour réduire la taille des cartes */
+    margin: 1rem;
+    text-align: center;
+    flex: 1 1 120px; /* Diminution de la taille des cartes */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px); /* Léger mouvement vers le haut */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Ombre plus marquée au survol */
+}
+
+.service-icon {
+    font-size: 2.5rem; /* Diminution de la taille de l'icône */
+    margin-bottom: 0.75rem; /* Diminution de l'espacement */
+    color: white; /* Couleur du texte de l'icône */
+    background-color: #23b0dc; /* Couleur de fond bleu */
+    border-radius: 50%; /* Arrondir pour faire un cercle */
+    padding: 0.5rem; /* Diminution de l'espace à l'intérieur du cercle */
+    display: inline-block; /* Ajuste la taille selon le contenu */
+}
+
+.service-title {
+    font-size: 1.2rem; /* Diminution de la taille du titre */
+    margin: 0.5rem 0;
+    color: #23b0dc; /* Couleur personnalisée pour le titre */
+}
+
+.service-description {
+    font-size: 0.85rem; /* Diminution de la taille de la description */
+    color: #555;
+    line-height: 1.2; /* Amélioration de l'espacement des lignes */
+}
+
+
+.welcome-button {
+    display: inline-block; 
+    border: 2px solid #23b0dc; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    color: #23b0dc; 
+    background-color: #ffffff;
+    border-radius: 25px; 
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition pour l'effet au survol */
+}
+
+.welcome-button:hover {
+    background-color: #1a8ab342; /* Couleur de fond au survol */
+    transform: scale(1.05); /* Agrandir légèrement au survol */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .suite-container {
+        flex-direction: column; /* Colonne sur petits écrans */
+    }
+
+    .services-list, .welcome-text {
+        flex: 1 1 100%; /* Chaque section prend toute la largeur sur petits écrans */
+        text-align: center; /* Centrer le texte sur petits écrans */
+    }
+}

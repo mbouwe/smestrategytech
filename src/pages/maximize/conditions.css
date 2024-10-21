@@ -1,0 +1,67 @@
+.cgv-container {
+    background-color: #23b0dc;
+    color: rgb(6, 6, 6);
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: 40px auto;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    line-height: 1.6;
+    position: relative;
+  }
+  
+  .cgv-title {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  }
+  
+  .cgv-intro {
+    font-size: 1rem;
+    margin-bottom: 25px;
+    line-height: 1.8;
+    padding: 0 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .cgv-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+  }
+  
+  .cgv-section:hover {
+    transform: translateY(-5px);
+  }
+  
+  .cgv-section-title {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+  }
+  
+  .cgv-text {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+  
+  .cgv-list {
+    margin: 10px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+  }
+  
+  .cgv-list li {
+    margin-bottom: 5px;
+  }
+  

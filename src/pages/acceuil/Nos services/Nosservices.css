@@ -1,0 +1,102 @@
+/* NosServices.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* Couleur de fond douce pour le corps */
+}
+
+.expertise-services-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    max-width: 1200px; /* Limiter la largeur pour un meilleur rendu */
+    margin: 0 auto; /* Centrer le conteneur */
+}
+
+.expertise-column {
+    flex: 0 0 35%;
+    padding: 2rem;
+    text-align: left;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Ombre plus prononcée */
+}
+
+.expertise-column h2 {
+    font-size: 2.2rem; /* Augmentation de la taille du titre */
+    color: #23b0dc;
+    margin-bottom: 1rem;
+}
+
+.expertise-column p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6; /* Amélioration de l'espacement des lignes */
+}
+
+.services-column {
+    flex: 0 0 60%;
+}
+
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Espacement entre les cartes */
+    margin-top: 2rem;
+}
+
+.service-card {
+    background: white;
+    border-radius: 12px;
+    border: 2px solid #23b0dc;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem; /* Augmentation du padding */
+    margin: 1rem;
+    text-align: center;
+    flex: 1 1 calc(25% - 2rem); /* Flexibilité avec une largeur minimale */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative; /* Nécessaire pour les animations */
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Ombre plus marquée au survol */
+}
+
+.service-image {
+    width: 100%; /* Prend toute la largeur de la carte */
+    height: auto; /* Garde les proportions de l'image */
+    border-radius: 5px; /* Coins arrondis pour les images */
+    margin-bottom: 1rem; /* Espacement entre l'image et le texte */
+}
+
+.service-title {
+    font-size: 1.5rem; /* Taille du titre des services */
+    margin: 0.5rem 0; /* Espacement au-dessus et en-dessous */
+    color: #23b0dc;
+    font-weight: bold; /* Gras pour le titre */
+}
+
+.service-description {
+    font-size: 1rem; /* Taille de la description */
+    color: #555; /* Couleur de la description */
+    line-height: 1.5; /* Espacement des lignes */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .expertise-services-container {
+        flex-direction: column; /* Colonne sur petits écrans */
+    }
+
+    .services-grid, .expertise-column {
+        flex: 1 1 100%; /* Chaque section prend toute la largeur sur petits écrans */
+        text-align: center; /* Centrer le texte sur petits écrans */
+    }
+
+    .service-card {
+        flex: 1 1 calc(100% - 2rem); /* Occupation totale sur mobile */
+    }
+}

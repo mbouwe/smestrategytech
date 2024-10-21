@@ -1,0 +1,350 @@
+/* Styles globaux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Conteneur principal */
+.intro-container {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-image: url('/solutions_digitales_grand_hero_2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column; /* Assurez-vous que les éléments s'empilent verticalement */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Superposition sombre */
+.intro-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.073); /* Assombrir davantage pour un meilleur contraste */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+}
+
+/* Titre principal */
+.intro-title {
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Plus sombre pour améliorer la lisibilité */
+    margin: 0;
+}
+
+/* Texte "StrategiTech" en bleu */
+.highlight-blue {
+    color: #23b0dc;
+    font-size: 48px;
+}
+
+/* Texte descriptif */
+.intro-text {
+    font-size: 20px;
+    line-height: 1.5;
+    max-width: 800px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Plus sombre pour améliorer la lisibilité */
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+/* Bouton de l'intro */
+.intro-button {
+    padding: 5px; /* Ajuster le padding pour un bouton plus large */
+    font-size: 16px; /* Augmenter légèrement la taille de police */
+    border: 2px solid #23b0dc;
+    background-color: white; /* Fond du bouton */
+    color: #23b0dc;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    text-decoration: none; /* Suppression du surlignage */
+    display: inline-block;
+    max-width: 150px; /* Largeur maximale pour forcer le texte à passer sur deux lignes */  
+    text-align: center;    
+    word-wrap: break-word;
+}
+
+.intro-button:hover {
+    background-color: #23b1dc2e;
+    color: #23b0dc;
+    transform: scale(1.05); /* Effet de zoom au survol */
+}
+
+.intro-button:active {
+    background-color: #1a8ab3;
+    border-color: #187ea6;
+    color: white;
+}
+
+/* Section principale */
+.home-main {
+    padding: 2rem;
+    background-color: #f9f9f9; /* Arrière-plan clair pour le reste de la page */
+}
+
+/* Section des services */
+.home-services {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.service-item {
+    margin: 1rem 0;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #555; /* Couleur de texte secondaire */
+}
+
+/* Section à propos */
+.home-about {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.home-about h2 {
+    font-size: 28px;
+}
+
+/* Section contact */
+.home-contact {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.contact-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #23b0dc;
+    background-color: #23b0dc; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.contact-button:hover {
+    background-color: #1a8ab3;
+    transform: scale(1.05); /* Effet de zoom au survol */
+}
+
+/* Pied de page */
+.home-footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #23b0dc; /* Couleur de fond du footer */
+    color: white;
+}
+
+/* Styles Responsifs */
+@media (max-width: 768px) {
+    .intro-title {
+        font-size: 36px; /* Réduire la taille du titre sur mobile */
+    }
+
+    .intro-text {
+        font-size: 18px; /* Réduire la taille du texte descriptif sur mobile */
+    }
+
+    .intro-button {
+        font-size: 14px; /* Réduire la taille du bouton sur mobile */
+        padding: 8px 16px; /* Réduire le padding du bouton sur mobile */
+    }
+
+    .service-item h3 {
+        font-size: 20px; /* Réduire la taille du titre des services */
+    }
+
+    .service-item p {
+        font-size: 14px; /* Réduire la taille du texte des services */
+    }
+
+    .home-about h2 {
+        font-size: 24px; /* Réduire la taille du titre "À Propos de Nous" */
+    }
+}
+/* Conteneur pour la section d'expertise et services */
+.expertise-services-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #f0f0f0; /* Couleur de fond différente pour la section */
+    margin-top: 2rem; /* Espace entre les sections */
+}
+
+/* Colonne d'expertise */
+.expertise-column {
+    flex: 1; /* Prend l'espace disponible */
+    margin-right: 1rem; /* Espace entre les colonnes */
+}
+
+/* Colonne de services */
+.services-column {
+    flex: 2; /* Prend plus d'espace que la colonne d'expertise */
+}
+
+/* Grille de services */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Crée une grille responsive */
+    gap: 1rem; /* Espacement entre les cartes de service */
+}
+
+/* Carte de service */
+.service-card {
+    background-color: white; /* Fond blanc pour les cartes */
+    border: 1px solid #ddd; /* Bordure grise claire */
+    border-radius: 8px; /* Coins arrondis */
+    padding: 1rem;
+    text-align: center; /* Centrer le texte */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Légère ombre pour un effet de profondeur */
+    transition: transform 0.2s; /* Animation pour le survol */
+}
+
+.service-card:hover {
+    transform: scale(1.05); /* Effet de zoom au survol */
+}
+
+/* Image du service */
+.service-image {
+    width: 100%; /* Prend toute la largeur de la carte */
+    height: auto; /* Maintient les proportions de l'image */
+    border-radius: 8px; /* Coins arrondis pour l'image */
+}
+
+/* Description du service */
+.service-description {
+    font-size: 14px; /* Taille de la police de la description */
+    color: #555; /* Couleur de texte secondaire */
+}
+/* Suite.css */
+
+body {
+    font-family: 'Arial', sans-serif; /* Une police simple et moderne */
+}
+
+.suite-container {
+    display: flex; /* Utilisation de Flexbox */
+    justify-content: space-between; /* Espacement entre les colonnes */
+    padding: 2rem;
+    background-color: #f4f4f4; /* Couleur de fond plus douce */
+}
+
+.welcome-text {
+    flex: 0 0 35%; /* Prend 35% de l'espace */
+    padding: 2rem; /* Ajout de padding */
+    text-align: left; /* Alignement à gauche */
+    background-color: #ffffff; /* Fond blanc pour le texte */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+.welcome-text h2 {
+    font-size: 2rem; /* Augmentation de la taille du titre */
+    color: #23b0dc; /* Couleur du titre */
+    margin-bottom: 1rem; /* Espacement au-dessous */
+}
+
+.welcome-text p {
+    font-size: 1rem; /* Taille du texte */
+    color: #333; /* Couleur du texte plus sombre */
+    line-height: 1.5; /* Espacement des lignes */
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Espacement entre les cartes */
+    flex: 0 0 60%; /* Prend 60% de l'espace */
+    margin-top: 2rem; /* Marge pour séparer des textes */
+}
+
+.service-card {
+    background: white;
+    border-radius: 12px; /* Coins arrondis */
+    border: 2px solid #23b0dc; /* Bordure bleue */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    padding: 0.75rem; /* Diminution du padding pour réduire la taille des cartes */
+    margin: 1rem;
+    text-align: center;
+    flex: 1 1 120px; /* Diminution de la taille des cartes */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px); /* Léger mouvement vers le haut */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Ombre plus marquée au survol */
+}
+
+.service-icon {
+    font-size: 2.5rem; /* Diminution de la taille de l'icône */
+    margin-bottom: 0.75rem; /* Diminution de l'espacement */
+    color: white; /* Couleur du texte de l'icône */
+    background-color: #23b0dc; /* Couleur de fond bleu */
+    border-radius: 50%; /* Arrondir pour faire un cercle */
+    padding: 0.5rem; /* Diminution de l'espace à l'intérieur du cercle */
+    display: inline-block; /* Ajuste la taille selon le contenu */
+}
+
+.service-title {
+    font-size: 1.2rem; /* Diminution de la taille du titre */
+    margin: 0.5rem 0;
+    color: #23b0dc; /* Couleur personnalisée pour le titre */
+}
+
+.service-description {
+    font-size: 0.85rem; /* Diminution de la taille de la description */
+    color: #555;
+    line-height: 1.2; /* Amélioration de l'espacement des lignes */
+}
+
+
+.welcome-button {
+    display: inline-block; 
+    border: 2px solid #23b0dc; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    color: #23b0dc; 
+    background-color: #ffffff;
+    border-radius: 25px; 
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition pour l'effet au survol */
+}
+
+.welcome-button:hover {
+    background-color: #1a8ab342; /* Couleur de fond au survol */
+    transform: scale(1.05); /* Agrandir légèrement au survol */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .suite-container {
+        flex-direction: column; /* Colonne sur petits écrans */
+    }
+
+    .services-list, .welcome-text {
+        flex: 1 1 100%; /* Chaque section prend toute la largeur sur petits écrans */
+        text-align: center; /* Centrer le texte sur petits écrans */
+    }
+}

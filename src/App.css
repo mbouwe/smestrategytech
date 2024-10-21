@@ -1,0 +1,40 @@
+:root{
+    --bleu:#23b0dc;
+    --gris:#a7a9ac;
+    --noir:black;
+  }
+
+  .App{
+    padding: 0rem;
+    margin: 0%;
+    overflow: hidden;
+    color: var(--noir);
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  
+  .button {
+    border-radius: 34px;
+    border: 2px solid #23b0dc; 
+    color: #23b0dc;
+    font-size: 16px;
+    padding: 10px 40px; 
+    background-color: white;
+    cursor: pointer; 
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Animation fluide pour les changements */
+  }
+  
+  .button:hover {
+    background-color: #23b1dc1d; 
+    color: var(--bleu); 
+    border: 2px solid #23b0dc; 
+  }

@@ -1,0 +1,148 @@
+/* maximize.css */
+
+/* Styles globaux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Conteneur principal */
+  .intro-container {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-image: url('/solutions_digitales_grand_hero_2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column; /* Assurez-vous que les éléments s'empilent verticalement */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Superposition sombre */
+  .intro-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.224);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    gap: 0;
+  }
+  
+  /* Titre principal */
+  .intro-title {
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin: 0;
+  }
+  
+  /* Texte "StrategiTech" en bleu */
+  .highlight-blue {
+    color: #23b0dc;
+    font-size: 48px;
+  }
+  
+  /* Texte descriptif */
+  .intro-text {
+    font-size: 20px;
+    line-height: 1.5;
+    max-width: 800px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  
+  /* Bouton de l'intro */
+  .intro-button {
+    padding: 5px 10px;
+    font-size: 15px;
+    border: 2px solid #23b0dc;
+    background-color: white; /* Fond du bouton */
+    color: #23b0dc;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none; /* Suppression du surlignage */
+    display: inline-block;
+    max-width: 150px; /* Largeur maximale pour forcer le texte à passer sur deux lignes */  
+    text-align: center;    
+    word-wrap: break-word;
+  }
+  
+  .intro-button:hover {
+    background-color: #23b1dc2e;
+    color: #23b0dc;
+  }
+  
+  .intro-button:active {
+    background-color: #1a8ab3;
+    border-color: #187ea6;
+    color: white;
+  }
+ /* maximize.css */
+
+/* maximize.css */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Deux colonnes */
+    grid-template-rows: auto auto; /* Deux lignes auto-adaptatives */
+    gap: 20px; /* Espace entre les cartes */
+    padding: 20px; /* Ajoute de l'espace autour de la grille */
+  }
+  
+  .card {
+    background-color:#e7eef0; /* Couleur de fond des cartes */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(44, 115, 221, 0.921); /* Ombre pour un effet de profondeur */
+    padding: 10px; /* Espace intérieur */
+    text-align: center;
+    border: 2px solid #23b0dc;
+  }
+  
+  .presentation-title {
+    font-size: 2.5em; /* Ajuste la taille du titre */
+    margin: 20px;
+    text-align: center;
+    color: #23b0dc;
+  }
+  
+  
+  .presentation-text {
+    margin-bottom: 20px;
+  }
+  
+  .presentation-feature {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .icon {
+    font-size: 2em; /* Ajuste la taille des icônes */
+    margin-right: 10px;
+  }
+  
+  .feature-text h4 {
+    margin: 0;
+  }
+  
+  .feature-text p {
+    margin-top: 5px;
+  }
+ 
+  
+  

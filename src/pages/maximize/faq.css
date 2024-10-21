@@ -1,0 +1,97 @@
+/* Conteneur principal de la FAQ */
+#faq {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+  }
+  
+  .faq-title {
+    font-size: 2rem; /* Taille du titre légèrement réduite */
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  /* Style des articles (questions) de la FAQ */
+  .faq-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #f3f3f3, #ffffff);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(84, 139, 234, 0.638);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .faq-item.active {
+    background: linear-gradient(145deg, #f0f0f0, #fcfcfc);
+    border: 1px solid rgba(200, 200, 200, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .faq-item h3 {
+    font-size: 1rem; /* Taille des questions réduite */
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .faq-item h3:focus {
+    outline: none;
+  }
+  
+  /* Icône d'ouverture/fermeture */
+  .faq-icon {
+    font-size: 1.8rem; /* Taille de l'icône ajustée */
+    color: #999;
+    transition: transform 0.3s ease;
+  }
+  
+  .faq-item.active .faq-icon {
+    transform: rotate(180deg);
+  }
+  
+  /* Style des réponses */
+  .faq-answer {
+    font-size: 1.1rem; /* Taille de la réponse légèrement réduite */
+    color: #666;
+    line-height: 1.7;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+  }
+  
+  .faq-item.active .faq-answer {
+    padding-top: 10px;
+    max-height: 200px;
+  }
+  
+  /* Effets de survol et focus */
+  .faq-item:hover,
+  .faq-item:focus-within {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(145deg, #f5f5f5, #ffffff);
+  }
+  
+  @media (max-width: 768px) {
+    .faq-title {
+      font-size: 2rem; /* Réduction de la taille du titre sur mobile */
+    }
+  
+    .faq-item h3 {
+      font-size: 1.3rem; /* Taille des questions réduite sur mobile */
+    }
+  
+    .faq-answer {
+      font-size: 1rem; /* Taille des réponses réduite sur mobile */
+    }
+  }
+  

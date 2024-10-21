@@ -1,0 +1,148 @@
+/* ensuite.css */
+
+/* Conteneur principal */
+.ensuite-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: #23b0dc;
+}
+
+/* Conteneur pour l'arborescence des services */
+.services-arborescence {
+    position: relative;
+    width: 100%; /* Ajuste pour être responsive */
+    max-width: 500px; /* Limite la largeur maximale */
+    height: 500px; /* Taille ajustée pour plus d'espace */
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid #23b0dc;
+}
+
+/* Image centrale */
+.central-image {
+    position: absolute;
+    border: 2px solid #23b0dc;
+    width: 200px;
+    height: auto;
+    z-index: 1;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(243, 245, 248, 0.966);
+}
+
+/* Cards des services */
+.service-item {
+    position: absolute;
+    background: white;
+    border: 2px solid #23b0dc;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgb(246, 247, 248);
+    padding: 1.5rem;
+    width: 250px; /* Taille plus compacte pour une meilleure organisation */
+    text-align: center;
+    z-index: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet au survol pour une expérience interactive */
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(24, 115, 234, 0.3);
+}
+
+/* Titres et textes des services */
+.service-item h3 {
+    color: #1a8ab3; /* Couleur bleu pour les titres */
+    font-size: 1.2rem; /* Taille du texte des titres légèrement réduite */
+    margin-bottom: 0.5rem;
+}
+
+.service-item p {
+    font-size: 0.9rem; /* Taille du texte des paragraphes réduite */
+    color: #333;
+}
+
+/* Positionnement des services */
+.left-top {
+    top: -30px;
+    left: 300px;
+}
+
+.left-bottom {
+    bottom: -80px;
+    left: 300px;
+}
+
+.right-top {
+    top: -30px;
+    right: 300px;
+}
+
+.right-bottom {
+    bottom: -80px;
+    right: 300px;
+}
+
+/* Ajout de marges et padding */
+.service-item {
+    margin: 80px; /* Plus d'espace autour des cartes */
+    padding: 0px; /* Plus d'espace interne */
+}
+
+/* Bouton de contact */
+.contact-button {
+    margin-top: 2rem;
+    padding: 12px 24px;
+    font-size: 18px;
+    color: white;
+    background-color: #23b0dc;
+    border: 2px solid ;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.792);
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #1a8ab371;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .services-arborescence {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .central-image {
+        width: 120px; /* Redimensionnement de l'image centrale */
+    }
+
+    .service-item {
+        width: 200px; /* Réduction de la taille des cartes */
+        position: static; /* Position par défaut pour l'alignement vertical */
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-item {
+        width: 150px; /* Réduction supplémentaire sur très petits écrans */
+        padding: 10px;
+    }
+
+    .central-image {
+        width: 100px; /* Image centrale plus petite */
+    }
+
+    .contact-button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
